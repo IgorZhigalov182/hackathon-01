@@ -1,0 +1,304 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lora&family=Raleway&family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+}
+
+.menu {
+    position: fixed;
+    z-index: 1000;
+    width: 150px;
+    background: #1b1a1a;
+    border-radius: 5px;
+    display: none;
+    list-style: none;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu .menu-item {
+    padding: 8px 10px;
+    font-size: 1rem;
+    color: #eee;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+    border-radius: inherit;
+}
+
+.menu .menu-item:hover {
+    background: #343434;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name-input h1{
+    text-align: center;
+}
+.name-input input {
+    width: 30vh;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.name-input input:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.game-r-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.8s;
+}
+
+.game-r-window {
+    position: relative;
+    z-index: 1;
+    background: #dedbfb;
+    border: solid rgb(80, 80, 80) 3px;
+    border-radius: 10px;
+    height: 76%;
+    width: 85%;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, .25);
+}
+
+.game-r-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.description-r{
+    padding-left: 10% ;
+    padding-right: 10%;
+    padding-top: 20%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.description-r-close {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.70;
+}
+
+.game-r{
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.green {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.reaction-result {
+    position: relative;
+    top: 40%;
+    padding: 20px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.game-drum{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(243, 221, 221);
+    align-items: center;
+    
+} 
+
+.h1 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-self: center;
+
+}
+.drumsImg{
+    height: 50vh;
+    width: 50vh;
+
+}
+.help, .task{
+    display: inline-block;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.help {
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+    padding: 5px;
+    height: 200px;
+}
+
+.header-d {
+    height: 5%;
+}
+body {
+    background-color: rgb(40, 40, 40);
+}
+main {
+    padding: 10px;
+}
+
+.prompt {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.prompt input{
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    padding: 20px 20px;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    font-weight: lighter;
+}
+
+.prompt::before {
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    font-weight: lighter;
+    font-size: small;
+    position: relative;
+    content: 'Введите число > ';
+}
+
+.guess {
+    font-family: 'Press Start 2P', cursive, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+
+}
+
+.guess:after {
+    display: inline-block;
+    animation: dotty steps(1,end) 1s infinite;
+    content: '';
+  }
+
+  @keyframes dotty {
+      0%   { content: ''; }
+      25%  { content: '.'; }
+      50%  { content: '..'; }
+      75%  { content: '...'; }
+      100% { content: ''; }
+  }
+
+  .output {
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    line-height:30px
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.game-table{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(243, 221, 221);
+    align-items: center;
+} 
+
+
+.rowTable{
+    background-image: url(https://free4kwallpapers.com/uploads/originals/2016/12/19/mega-mario-wallpaper.jpg); 
+    background-size: 100%;
+    border-radius: 35px;
+    width: 80vh;
+    height: 30vh;
+    font-family: 'Roboto',sans-serif;
+    font-size: 40px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(221, 26, 26);
+    transition: .3s;
+    margin-bottom: 20px;
+}
+
