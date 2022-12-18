@@ -33,7 +33,7 @@ export class Round {
 
         const help = document.createElement('img')
         help.classList = 'help'
-        help.src = '../../img/drum_game_info.jpg'
+        help.src = '../img/drum_game_info.jpg'
         innerContainerDrum.append(help)
 
         const containerDrum = document.createElement('div')
