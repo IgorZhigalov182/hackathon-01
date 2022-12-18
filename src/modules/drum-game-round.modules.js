@@ -31,10 +31,18 @@ export class Round {
         task.textContent = `Сыграй: ${this.task}`
         innerContainerDrum.append(task)
 
-        const help = document.createElement('img')
-        help.classList = 'help'
-        help.src = '../img/drum_game_info.jpg'
-        innerContainerDrum.append(help)
+        const helptext = document.createElement('div')
+        helptext.classList = 'help'
+        helptext.innerHTML = `                            
+                            Kick = k 
+                            <br> Snare = s
+                            <br> Hi-hat = h
+                            <br> Tom 1 = v
+                            <br> Tom 2 = b
+                            <br> Tom 3 = n
+                            <br> Crash = c                            
+                            `
+        innerContainerDrum.append(helptext)
 
         const containerDrum = document.createElement('div')
         containerDrum.classList = 'drums'

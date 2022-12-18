@@ -37,10 +37,15 @@
 }
 
 .help {
-    /* border: 1px solid rgb(255, 255, 255); */
-    border-radius: 25px;
-    padding: 5px;
-    height: 200px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 17px;
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .header-d {
